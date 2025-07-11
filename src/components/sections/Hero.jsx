@@ -98,10 +98,9 @@ const TextLoop = styled.div`
   gap: 8px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
+ min-height: 68px; /* NEW: prevent jump */
 
-  @media (max-width: 960px) {
-    text-align: center;
-  }
+  
 
   @media (max-width: 960px) {
     font-size: 22px;
@@ -109,6 +108,7 @@ const TextLoop = styled.div`
     margin-bottom: 16px;
     justify-content: center;
     text-align: center;
+     min-height: 48px; /* NEW: prevent jump on mobile */
   }
 `;
 
