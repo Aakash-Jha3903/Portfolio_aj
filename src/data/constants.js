@@ -10,7 +10,8 @@ export const Bio = {
   description:"Focused on building practical web applications and integrating machine learning capabilities. Solid foundation in full-stack development, API integration, and modern development tools, with a strong interest in solving real-world problems. \nCurrently looking for a software development internship to apply full-stack and machine learning skills in real-world projects.",
   github: "https://github.com/Aakash-Jha3903",
   gfg:"https://www.geeksforgeeks.org/user/ajdjaucq7/",
-  resume: "https://github.com/Aakash-Jha3903/Portfolio/blob/main/Aakash_Jha/public/Aakash_Jha__resume.pdf",
+  resume: "../../public/Aakash_Jha__resume.pdf",
+  // resume: "https://github.com/Aakash-Jha3903/Portfolio_aj/blob/main/public/Aakash_Jha__resume.pdf",
   linkedin: "https://www.linkedin.com/in/aakash-jha-a11931257/",
   profile_pic:"https://avatars.githubusercontent.com/u/132154406?v=4",
 
