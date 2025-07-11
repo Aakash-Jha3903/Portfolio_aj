@@ -11,10 +11,9 @@ export const Bio = {
   github: "https://github.com/Aakash-Jha3903",
   gfg:"https://www.geeksforgeeks.org/user/ajdjaucq7/",
   // resume: "https://github.com/Aakash-Jha3903/Portfolio_aj/blob/main/public/Aakash_Jha__resume.pdf",
-  resume: "/Aakash_Jha__resume.pdf",
+  resume: "/Aakash_Jha_resume.pdf",
   linkedin: "https://www.linkedin.com/in/aakash-jha-a11931257/",
   profile_pic:"https://avatars.githubusercontent.com/u/132154406?v=4",
-
 };
 
 export const skills = [
