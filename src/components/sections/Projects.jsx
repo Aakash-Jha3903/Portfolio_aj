@@ -7,7 +7,7 @@ const Container = styled.div`
 margin-top: 100px;
 display: flex;
 flex-direction: column;
-justify-content-center;
+justify-content:center;
 position: relative;
 z-index: 1;
 padding: 0 16px;
@@ -108,8 +108,9 @@ const Projects = ({ openModal, setOpenModal }) => {
         </Desc>
         <CardContainer>
           {toggle === "all" &&
-            projects.map((project) => (
+            projects.map((project, index) => (
               <ProjectCard
+                key={`project-${index}`}
                 project={project}
                 openModal={openModal}
                 setOpenModal={setOpenModal}

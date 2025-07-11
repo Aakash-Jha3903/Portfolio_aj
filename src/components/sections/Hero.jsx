@@ -94,7 +94,8 @@ const TextLoop = styled.div`
   font-weight: 600;
   font-size: 32px;
   display: flex;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
 
@@ -106,6 +107,8 @@ const TextLoop = styled.div`
     font-size: 22px;
     line-height: 48px;
     margin-bottom: 16px;
+    justify-content: center;
+    text-align: center;
   }
 `;
 
@@ -237,7 +240,7 @@ const Hero = () => {
                   transition={{ duration: 0.6, ease: "easeOut" }}
                 >
                   <TextLoop>
-                    I am a
+                    <span>I am a</span>
                     <Span>
                       <Typewriter
                         options={{
