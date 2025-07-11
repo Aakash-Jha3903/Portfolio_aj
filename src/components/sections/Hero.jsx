@@ -231,18 +231,28 @@ const Hero = () => {
                 <Title>
                   Hi, I am <br /> {Bio.name}
                 </Title>
-                <TextLoop>
-                  I am a
-                  <Span>
-                    <Typewriter
-                      options={{
-                        strings: Bio.roles,
-                        autoStart: true,
-                        loop: true,
-                      }}
-                    />
-                  </Span>
-                </TextLoop>
+                <motion.div
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                >
+                  <TextLoop>
+                    I am a
+                    <Span>
+                      <Typewriter
+                        options={{
+                          strings: Bio.roles,
+                          autoStart: true,
+                          loop: true,
+                          delay: 60, // typing speed (lower is faster)
+                          deleteSpeed: 40, // backspace speed
+                          pauseFor: 1200, // pause before deleting
+                          cursor: '|', // cursor style
+                        }}
+                      />
+                    </Span>
+                  </TextLoop>
+                </motion.div>
               </motion.div>
 
               <motion.div {...headContentAnimation}>
@@ -260,7 +270,7 @@ const Hero = () => {
                     src={Bio.profile_pic}
                     alt="Aakash Jha Profile"
                     onError={(e) => {
-                      e.target.onerror = null; 
+                      e.target.onerror = null;
                       e.target.src = HeroImg;
                     }}
                   />
