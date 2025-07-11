@@ -181,9 +181,6 @@ const Navbar = () => {
             </NavLink>
 
             <ButtonContainer>
-              <button onClick={() => setIsDark((prev) => !prev)}>
-                {isDark ? "Light Mode" : "Dark Mode"}
-              </button>
               <GithubButton
                 href={Bio.github}
                 target="_Blank"
